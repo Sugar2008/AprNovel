@@ -1,0 +1,129 @@
+.clickList {
+  display: flex;
+}
+.clickList .title {
+  margin-bottom: 20px;
+}
+.clickList .content_1 {
+  font-size: 12px;
+}
+/* 编辑 */
+.clickList .bjtj {
+  width: 210px;
+  margin-right: 30px;
+}
+.clickList .ns {
+  width: 300px;
+  margin-right: 30px;
+}
+.clickList .ns:last-child {
+  margin-right: 0;
+}
+.clickList .tit {
+  line-height: 24px;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+.clickList .tit a {
+  padding: 0 6px;
+  /* white-space: nowrap; */
+}
+.clickList .bjtjCon a:first-child {
+  padding-right: 5px;
+}
+.clickList ul {
+  margin: 5px;
+}
+.clickList li:not(.ok) {
+  line-height: 18px;
+  padding: 5px 0;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 男生 */
+.clickList .ns .bookInt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.clickList .ns .bookInt .bookInt_1 .sign {
+  padding-right: 5px;
+}
+.clickList .ns .bookInt .bookInt_1 .num {
+  width: 18px;
+  height: 18px;
+  color: #fff;
+  background-color: #999;
+  text-align: center;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+}
+.clickList .ns .bookInt .bookInt_1 .numA{
+  background-color: #f60;
+}
+.clickList .ns .bookInt .click {
+  color: #999;
+  text-align: right;
+  display: inline-block;
+}
+.clickList .ns .book {
+  display: flex !important;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  border: 1px solid #eee;
+  margin: 10px 0;
+  padding: 10px;
+}
+.clickList .ns .book p {
+  line-height: 20px;
+  display: -webkit-box;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+}
+.clickList .ns .book img {
+  width: 83px;
+  height: 120px;
+  margin-right: 5px;
+}
+
+
+
+/* DOM - style 编辑推荐 */
+#tit1 > a.active {
+  color: #f00;
+  border-bottom: 1px solid #f00;
+}
+.clickList .content_1 .bjtj_1:not(.active) {
+  display: none;
+}
+/* DOM - style 男生 */
+#tit2 > a.active {
+  color: #f00;
+  border-bottom: 1px solid #f00;
+}
+.clickList .content_1 .ns_1:not(.active) {
+  display: none;
+}
+/* DOM - style 女生 */
+#tit3 > a.active {
+  color: #f00;
+  border-bottom: 1px solid #f00;
+}
+.clickList .content_1 .ns_2:not(.active) {
+  display: none;
+}
+/* DOM - style 全站 */
+#tit4 > a.active {
+  color: #f00;
+  border-bottom: 1px solid #f00;
+}
+.clickList .content_1 .ns_3:not(.active) {
+  display: none;
+}

@@ -1,0 +1,86 @@
+.updateBook .content_1 .title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.updateBook .content_1 .title .uB_title>span{
+  color: #555;
+  opacity: 1;
+}
+.updateBook .content_2 .tabC .tab_head {
+  border-bottom: 1px dotted #ccc;
+  letter-spacing: 0.86px;
+  line-height: 40px;
+  overflow: hidden;
+  display: flex;
+}
+.updateBook .content_2 .tabC span {
+  padding-right: 20px;
+  font-size: 12px;
+}
+.updateBook .content_2 .tabC .kind {
+  width: 60px;
+  padding-right: 15px;
+}
+.updateBook .content_2 .tabC .bookname {
+  width: 250px;
+}
+.updateBook .content_2 .tabC .chap {
+  width: 430px;
+}
+.updateBook .content_2 .tabC .author {
+  width: 155px;
+}
+.updateBook .content_2 .tabC .count {
+  width: 105px;
+}
+.updateBook .content_2 .tabC .time {
+  width: 105px;
+  text-align: right;
+  padding-right: 0;
+}
+.updateBook .content_2 .tabC .main_con li {
+  border-bottom: 1px dotted #ccc;
+  line-height: 40px;
+  overflow: hidden;
+  letter-spacing: 1px;
+  display: flex;
+}
+.updateBook .content_2 .tabC .main_con span{
+  font-size: 14px;
+}
+.updateBook .content_2 .tabC .main_con .kind a,
+.updateBook .content_2 .tabC .main_con .author a,
+.updateBook .content_2 .tabC .main_con .count{
+  color: #999;
+}
+.updateBook .content_2 .tabC .main_con .bookname{
+  display: flex;
+}
+.updateBook .content_2 .tabC .main_con em{
+  font-size: 12px;
+  color: #d32f2f;
+  letter-spacing: .86px;
+  font-style: normal;
+}
+.updateBook .content_2 .tabC .main_con .vip{
+  background-image: url(../img/updateBook/vip.png);
+  width: 16px;
+  height: 15px;
+  vertical-align: text-bottom;
+  margin-left: 3px;
+  display: inline-block;
+}
+.updateBook .content_2 .tabC .main_con a:hover{
+  color: #f00;
+}
+
+/* DOM - style */
+#tabs>span.active{
+  color: #333;
+  font-weight: bold;
+  opacity: 1;
+}
+.updateBook .content_2 .tabC:not(.active){
+  display: none;
+}

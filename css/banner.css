@@ -1,0 +1,47 @@
+#banner{
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  user-select: none;
+  position: relative;
+  margin-top: 20px;
+}
+
+/* 6图 */
+#banner>div:first-child{
+  display: flex;
+  
+}
+#banner>div:first-child img{
+  width: 100%;
+  height: 441px;
+}
+
+/* 6小圆点 */
+#banner>div:nth-child(2){
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  justify-content: center;
+}
+#banner span{
+  width: 14px;
+  height: 14px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: gray;
+}
+#banner span.active{
+  background-color: orange;
+}
+
+/* 按钮 */
+#banner>div:nth-child(3){
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
